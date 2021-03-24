@@ -1,0 +1,41 @@
+/*
+ * SEV_SEG_CONFIG.h
+ *
+ * Created: 2/22/2021 2:24:58 PM
+ *  Author: VAIO
+ */ 
+
+
+#ifndef SEV_SEG_CONFIG_H_
+#define SEV_SEG_CONFIG_H_
+/*
+WHAT SHOULD I DO HERE:
+1- MACROS NEEDED
+2-RENAMING OF PORTS NEEDE
+3-RENAMING OF PINS NEEDED
+4-STATES
+*/
+
+
+#include "CPU_CONFIGURATION.h"
+
+/* Renaming for ports */
+
+#define SEVSEG_CMD_PORT			DIO_PORTB
+#define SEVSEG_DTA_PORT			DIO_PORTA
+
+/*RENAMING FOR PINS*/
+
+#define SEVSEG_EN1			    DIO_PIN1
+#define SEVSEG_EN2				DIO_PIN2
+
+#define SEVSEG_DTA0_A			DIO_PIN4
+#define SEVSEG_DTA1_B			DIO_PIN5
+#define SEVSEG_DTA2_C			DIO_PIN6
+#define SEVSEG_DTA3_D			DIO_PIN7
+
+#define SEVSEG_OUTPUT			DIO_PIN_OUTPUT
+#define SEVSEG_HIGH		    	DIO_PIN_HIGH
+#define SEVSEG_LOW				DIO_PIN_LOW
+
+#endif /* SEV_SEG_CONFIG_H_ */
